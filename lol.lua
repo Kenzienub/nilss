@@ -363,12 +363,10 @@ function MainRobMansion()
         _G.FailMansion = true
     end)
     
-    repeat
+    repeat task.wait(0.1)
         Character.HumanoidRootPart.CFrame = MansionTeleportCFrame
         FireTouchInterest(TouchToEnter)
-    
-        task.wait()
-    until dependencies.modules.MansionUtils.isPlayerInElevator(MansionRobbery, LocalPlayer) or FailMansion
+    until dependencies.modules.MansionUtils.isPlayerInElevator(MansionRobbery, LocalPlayer) or _G.FailMansion    
     
     if FailMansion then 
         return;
@@ -468,7 +466,7 @@ function MainRobMansion()
     
     print("Killed boss in " .. Start - os.time())
     LocalPlayer.Folder.Pistol.InventoryEquipRemote:FireServer(false)
-    repeat task.wait() until LocalPlayer.PlayerGui.AppUI:FindFirstChild("RewardSpinner")
+    WaitForReward()
 end
 
 local function MainAirDrop()
