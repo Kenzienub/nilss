@@ -13,14 +13,14 @@ function CheckLevelBosses()
             _G.BossQuest = "JungleQuest"
             _G.QuestLvDQ = 3
             _G.NameMonDQ = "The Gorilla King [Lv. 25] [Boss]"
-            _G.CFrameQBoss = CFrame.new(-1601, 36, 153)
+            _G.CFrameDQBoss = CFrame.new(-1601, 36, 153)
             _G.CFrameBoss = CFrame.new(-1088, 8, -488)
         elseif Lv == 55 or Lv <= 99 or _G.SelectBoss == "Bobby" then
             _G.BossMs = "Bobby"
             _G.BossQuest = "BuggyQuest1"
             _G.QuestLvDQ = 3
             _G.NameMonDQ = "Bobby [Lv. 55] [Boss]"
-            _G.CFrameQBoss = CFrame.new(-1140, 4, 3827)
+            _G.CFrameDQBoss = CFrame.new(-1140, 4, 3827)
             _G.CFrameBoss = CFrame.new(-1087, 46, 4040)
         elseif Lv == 100 or Lv <= 109 or _G.SelectBoss == "The Saw" then
             _G.BossMs = "The Saw"
@@ -31,7 +31,7 @@ function CheckLevelBosses()
             _G.BossQuest = "SnowQuest"
             _G.QuestLvDQ = 3
             _G.NameMonDQ = "Yeti [Lv. 110] [Boss]"
-            _G.CFrameQBoss = CFrame.new(1386, 87, -1298)
+            _G.CFrameDQBoss = CFrame.new(1386, 87, -1298)
             _G.CFrameBoss = CFrame.new(1218, 138, -1488)
         elseif Lv == 120 or Lv <= 129 or _G.SelectBoss == "Mob Leader" then
             _G.BossMs = "Mob Leader"
