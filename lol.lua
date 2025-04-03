@@ -8,7 +8,7 @@ local lp = game.Players.LocalPlayer;
 function CheckLevelBosses()
     local Lv = lp.Data.Level.Value
     if First_Sea then
-        if if (Lv == 25) or (Lv <= 54) or _G.SelectBoss == "The Gorrila King" then
+        if (Lv == 25) or (Lv <= 54) or _G.SelectBoss == "The Gorrila King" then
             _G.BossMs = "The Gorrila King"
             _G.BossQuest = "JungleQuest"
             _G.QuestLvDQ = 3
@@ -26,7 +26,7 @@ function CheckLevelBosses()
             _G.BossMs = "The Saw"
             _G.NameMonDQ = "The Saw [Lv. 100] [Boss]"
             _G.CFrameBosses = CFrame.new(-1087, 46, 4040)
-        elseif (Lv == 110) or(Lv <= 119) or _G.SelectBoss == "Yeti" then
+        elseif (Lv == 110) or (Lv <= 119) or _G.SelectBoss == "Yeti" then
             _G.BossMs = "Yeti"
             _G.BossQuest = "SnowQuest"
             _G.QuestLvDQ = 3
