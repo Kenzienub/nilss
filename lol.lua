@@ -8,8 +8,8 @@ local lp = game.Players.LocalPlayer;
 function CheckLevelBosses()
     local Lv = lp.Data.Level.Value
     if First_Sea then
-        if (Lv == 25) or (Lv <= 54) or _G.SelectBoss == "The Gorrila King" then
-            _G.BossMs = "The Gorrila King"
+        if (Lv == 25) or (Lv <= 54) or _G.SelectBoss == "The Gorilla King" then
+            _G.BossMs = "The Gorilla King"
             _G.BossQuest = "JungleQuest"
             _G.QuestLvDQ = 3
             _G.NameMonDQ = "The Gorilla King [Lv. 25] [Boss]"
